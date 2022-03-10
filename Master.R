@@ -22,9 +22,6 @@ factorsMM <- data.frame(Group = "MM", Sample = colnames(MM))
 factorsAML <- data.frame(Group = "AML", Sample = colnames(AML_BM))
 factorsNormalBM <- data.frame(Group = "NormalBM", Sample = colnames(Normal_BoneMarrow))
 
-Metastisic <- rnas1[ , rnas1$sample_type == "Metastatic"]
-factorsRichard_1 <- data.frame(Group = "Metastasico", Sample = colnames(Metastatic))
-
 rownames(B_ALL) <- rowData(B_ALL)$external_gene_name
 rownames(T_ALL) <- rowData(T_ALL)$external_gene_name
 rownames(MM) <- rowData(MM)$external_gene_name
